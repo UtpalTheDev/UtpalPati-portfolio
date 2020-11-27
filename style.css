@@ -160,3 +160,13 @@ text-align: right;
 .footer ul {
     padding-inline-start: 0px;
 }
+
+.space{
+    height:15px;
+}
+.space1{
+    height:30px;
+}
+.space2{
+    height:60px;
+}
