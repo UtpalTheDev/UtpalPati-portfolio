@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --primary: #22D3EE;
+    --gray:#9f6060;
+    --intro: #3d3d5c;
+    --offwhite:#d0d0e1;
+    --footer:#3d3d5c;
+}
+body
+{
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0px;
+    
+    
+}
+
+hr{
+    margin: 1rem 0rem;
+}
+
+/*containers*/
+.container{
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+    max-width: 490px;
+  
+
+}
+.container-fluid{
+  
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*links  */
+
+.primary-link{
+
+  text-decoration: none;
+  background-color: var(--primary) ;
+  padding:0.3rem 1rem 0.3rem 1rem;
+  border-radius: 0.5rem;
+  color:black;
+  width:max-content;
+  min-width: 140px;
+}
+
+.secondary-link{
+
+    text-decoration: none;
+    border:1px solid var(--primary);
+    padding:0.3rem 1rem 0.3rem 1rem;
+    color:var(--primary);
+    width:max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+
+}
+
+/*list--------------*/
+
+.unorderd{
+    list-style:none;
+}
+
+.list-inline li{
+  display:inline; 
+  padding-left: 0.5rem;
+  ;
+  padding-right: 0.5rem;    
+}
+
+/*nav---------------*/
+
+
+.navigation{
+    background-color: var(--primary);
+    border-radius:0px 0px 50px 15px ;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    color:white;
+    
+}
+
+.navigation .top-set{
+    font-size:x-large ;
+    font-weight:bolder;
+    
+}
+.navigation ul{
+text-align: right;
+}
+.navigation li{
+    display:inline; 
+    padding-left: 1rem;
+    ;
+    padding-right: 1rem; 
+}
+.navigation .active{
+    color:black;
+}
+.navigation a{
+    text-decoration: none;
+    color:white;
+}
+
+/*hero--------------*/
+
+.hero{
+    display: block;
+    padding: 4rem 0rem 2rem 0rem;
+}
+.hero img{
+    max-width: 490px;
+
+}
+.hero h1{
+    color:var(--gray);
+    text-align: center;
+    
+}
+.hero p{
+    text-align: center;
+    color:var(--intro) ;
+    font-weight: bold;
+}
+
+
+/*section-------------*/
+
+.section{
+    padding:2rem 1rem;
+    border-radius: 0.5rem;
+    
+}
+.ow{
+    background-color:var(--offwhite);
+    
+}
+
+/*footer---------------------*/
+
+.footer{
+    background-color:var(--footer) ;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50px 50px 0px 0px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer ul {
+    padding-inline-start: 0px;
+}
