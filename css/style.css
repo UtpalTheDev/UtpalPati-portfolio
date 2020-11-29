@@ -199,4 +199,9 @@ text-align: right;
         max-width:250px;
     }
 }   
+@media only screen and (max-width: 500px) and (min-width:400px){
 
+    .hero img{
+        max-width:400px;
+    }
+}
