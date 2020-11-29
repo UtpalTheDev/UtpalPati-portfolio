@@ -1,5 +1,5 @@
 :root{
-    --flex-text:#A7F3D0;
+    --flex-text:white;
     --primary: #22D3EE;
     --gray:#9f6060;
     --intro: #3d3d5c;
@@ -7,7 +7,7 @@
     --footer:#3d3d5c;
     --flex-back:#D1FAE5;
 }
-.flex-container {
+.flex-container-row {
     display: flex;
     flex-direction: row;
     background-color:white;
@@ -17,31 +17,99 @@
     
   }
   
-  .flex-container > div {
+  .flex-container-row > div {
     background-color: var(--intro);
     width: 250px;
-    height: 250px;
+    height: 270px;
     margin: 10px;
     text-align: center;
     border-radius: 1rem;
   }
-  .block img{
+  .block-row img{
    
    width:230px;
    height:170px; 
    padding-top:8px;
    border-radius:1rem;
+   margin:1px;
   }
 
-  .block{
-      height:250px;
+  .block-row{
+      height:270px;
       color:var(--flex-text);
       
   } 
-  .block div{
+  .block-row div{
       font-weight: bolder;
+      padding-left:5px;
+      padding-right: 5px;
+
   }
-  .block .run{
+  .block-row .run{
+      text-decoration: none;
+      background-color: var(--primary);
+      padding:0.3rem 1rem 0.3rem 1rem;
+      border-radius: 0.5rem;
+      line-height:50px;
+      color:black;
+      margin:1rem;
+      
+
+  }
+
+  .block-row .more{
+    text-decoration: none;
+    border:1px solid var(--primary);
+    padding:0.3rem 1rem 0.3rem 1rem;
+    color:var(--primary);
+    margin:1rem;
+    border-radius: 0.5rem;
+  }
+  
+
+  /*flex column-------------*/
+
+  .flex-container-column {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width:410px;
+    height:600px;
+    
+    padding:2rem;
+    
+  }
+  
+  .flex-container-column > div {
+    background-color: var(--intro);
+    width: 400px;
+    height: 85px;
+    margin: 5px;
+    border-radius: 1rem;
+  }
+
+  .block-column img{
+   
+   width:70px;
+   height:75px; 
+   padding:0px 5px 0px 0px;
+   border-radius:1rem;
+   float:left;
+  
+  }
+
+  .block-column{
+      width:400px;
+      height:85px;
+      color:var(--flex-text);
+      
+      
+  } 
+  .block-column div{
+      font-weight: bolder;
+      padding:5px;
+  }
+  .block-column .run{
       text-decoration: none;
       background-color: var(--primary);
       padding:0.3rem 1rem 0.3rem 1rem;
@@ -51,12 +119,114 @@
 
   }
 
-  .block .more{
+  .block-column .more{
     text-decoration: none;
     border:1px solid var(--primary);
     padding:0.3rem 1rem 0.3rem 1rem;
     color:var(--primary);
-    margin:1rem;
+    margin-left:220px;
+    margin-top:50px;
     border-radius: 0.5rem;
+    line-height:70px;
+    
+  }
+
+  /*iframe-------------------*/
+
+  .iframe1{
+    float:right;
+    padding-top:2rem;
+    padding-bottom:2rem;
+     
+    padding-right:2rem;
+   
+  }
+
+  .iframe1 iframe{
+   
+    width:800px;
+    height:550px;
+    border-radius: 1rem;
+    border:1px solid white;
+  }
+
+
+@media only screen and (max-width: 600px) and (min-width:500px){
+  .iframe1 iframe {
+    width:400px;
   }
   
+}
+@media only screen and (max-width: 499px) and (min-width:400px){
+    .iframe1 iframe {
+      width:350px;
+    }  
+    .flex-container-column{
+      width:350px;
+      padding-left:2px;
+    }     
+    .flex-container-column > div{
+      width:350px;
+    }
+    .block-column{
+      width:350px;
+    }
+    .block-column .more{
+      margin-left:150px;
+      line-height:40px ;
+    }
+}
+@media only screen and (max-width: 399px) and (min-width:328px){
+      .iframe1 iframe {
+        width:300px;
+      }   
+      .flex-container-column{
+        width:300px;
+        padding-left:2px;
+      }     
+      .flex-container-column > div{
+        width:300px;
+      }
+      .block-column{
+        width:300px;
+      }
+      .block-column .more{
+        margin-left:130px;
+        line-height:40px ;
+      }
+      .flex-container-row > div {
+        height:265px;
+      }
+
+}
+
+@media only screen and (max-width: 327px) and (min-width:200px){
+  .iframe1 iframe {
+    width:250px;
+  } 
+  .flex-container-column{
+    width:250px;
+    padding-left:2px;
+  }     
+  .flex-container-column > div{
+    width:250px;
+  }
+  .block-column{
+    width:250px;
+  }
+  .block-column .more{
+    margin-left:140px;
+    line-height:1px ;
+  }
+  .flex-container-row > div {
+    height:275px;
+  }
+  .flex-container-column > div{
+    height:110px;
+  }
+
+
+
+
+
+} 

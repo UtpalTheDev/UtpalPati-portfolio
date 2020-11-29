@@ -162,6 +162,13 @@ text-align: right;
     padding-inline-start: 0px;
 }
 
+.face img{
+    width:50px;
+    height:50px;
+    border-radius: 1.5rem;
+}
+
+/*space---*/
 .space{
     height:15px;
 }
@@ -171,3 +178,25 @@ text-align: right;
 .space2{
     height:60px;
 }
+
+
+/*responsive------------------*/
+@media only screen and (max-width: 399px) and (min-width:300px){
+
+.hero img{
+    max-width:335px;
+}
+.navigation li{
+    padding-left: 0.5rem;
+    ;
+    padding-right: 0.5rem; 
+}
+
+}
+@media only screen and (max-width: 299px) and (min-width:200px){
+
+    .hero img{
+        max-width:250px;
+    }
+}   
+
