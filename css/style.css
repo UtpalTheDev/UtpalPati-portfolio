@@ -184,7 +184,7 @@ text-align: right;
 @media only screen and (max-width: 399px) and (min-width:300px){
 
 .hero img{
-    max-width:335px;
+    max-width:300px;
 }
 .navigation li{
     padding-left: 0.5rem;
